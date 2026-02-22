@@ -1,6 +1,5 @@
 {
   "name": "ga2-87ada2",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {}
   },
@@ -12,5 +11,5 @@
       ]
     }
   },
-  "postCreateCommand": "uv pip install fastapi"
+  "postCreateCommand": "pip install uv && uv pip install fastapi --system"
 }
